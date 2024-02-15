@@ -19,6 +19,7 @@ USER_PROGS := \
 	zombie\
 	call-pid\
 	call-projectA\
+	call-projectB
 
 USER_PROGS := $(addprefix user/, $(USER_PROGS))
 

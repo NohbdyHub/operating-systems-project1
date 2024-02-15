@@ -28,6 +28,7 @@ int uptime(void);
 
 // Additional syscalls
 int projectA(void);
+int projectB(void);
 
 // user library functions (ulib.c)
 int stat(char*, struct stat*);
