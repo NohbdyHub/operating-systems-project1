@@ -26,5 +26,6 @@ int sys_uptime(void);
 
 // Additional syscalls
 int sys_projectA(void);
+int sys_projectB(void);
 
 #endif // _SYSFUNC_H_

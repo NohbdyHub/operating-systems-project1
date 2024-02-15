@@ -26,5 +26,6 @@
 
 // Additional syscalls
 #define SYS_projectA 22
+#define SYS_projectB 23
 
 #endif // _SYSCALL_H_

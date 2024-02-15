@@ -106,6 +106,7 @@ static int (*syscalls[])(void) = {
 
 // Additional syscalls
 [SYS_projectA] sys_projectA,
+[SYS_projectB] sys_projectB
 };
 
 // Called on a syscall trap. Checks that the syscall number (passed via eax)
@@ -117,6 +118,7 @@ syscall(void)
   
   num = proc->tf->eax;
   if(num > 0 && num < NELEM(syscalls) && syscalls[num] != NULL) {
+    syscallCount++;
     proc->tf->eax = syscalls[num]();
   } else {
     cprintf("%d %s: unknown sys call %d\n",

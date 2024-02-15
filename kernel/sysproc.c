@@ -8,6 +8,8 @@
 
 static int getpidCount = 0;
 
+int syscallCount = 0;
+
 int
 sys_fork(void)
 {
@@ -97,4 +99,10 @@ int
 sys_projectA(void)
 {
   return getpidCount;
+}
+
+int
+sys_projectB(void)
+{
+  return syscallCount;
 }
