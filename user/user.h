@@ -26,6 +26,9 @@ char* sbrk(int);
 int sleep(int);
 int uptime(void);
 
+// Additional syscalls
+int projectA(void);
+
 // user library functions (ulib.c)
 int stat(char*, struct stat*);
 char* strcpy(char*, char*);

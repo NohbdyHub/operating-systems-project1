@@ -24,4 +24,7 @@
 #define SYS_sleep  20
 #define SYS_uptime 21
 
+// Additional syscalls
+#define SYS_projectA 22
+
 #endif // _SYSCALL_H_
