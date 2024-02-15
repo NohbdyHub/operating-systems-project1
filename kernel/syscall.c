@@ -118,6 +118,7 @@ syscall(void)
   
   num = proc->tf->eax;
   if(num > 0 && num < NELEM(syscalls) && syscalls[num] != NULL) {
+    // if valid syscall being made, increment syscallCount for projectB
     syscallCount++;
     proc->tf->eax = syscalls[num]();
   } else {

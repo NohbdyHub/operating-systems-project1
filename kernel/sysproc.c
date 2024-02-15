@@ -95,12 +95,14 @@ sys_uptime(void)
   return xticks;
 }
 
+// return how many times getpid() has been called
 int
 sys_projectA(void)
 {
   return getpidCount;
 }
 
+// return how many syscalls have been made
 int
 sys_projectB(void)
 {
