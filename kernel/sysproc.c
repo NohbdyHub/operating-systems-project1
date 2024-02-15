@@ -6,7 +6,7 @@
 #include "proc.h"
 #include "sysfunc.h"
 
-static int getpidCount = 0;
+int getpidCount = 0;
 
 int syscallCount = 0;
 
