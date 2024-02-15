@@ -6,6 +6,8 @@
 #include "proc.h"
 #include "sysfunc.h"
 
+static int getpidCount = 0;
+
 int
 sys_fork(void)
 {
@@ -39,7 +41,7 @@ int
 sys_getpid(void)
 {
 
-  getpidCount++;
+  getpidCount = getpidCount + 1;
   return proc->pid;
 }
 
