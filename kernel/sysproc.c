@@ -7,7 +7,6 @@
 #include "sysfunc.h"
 
 int getpidCount = 0;
-
 int syscallCount = 0;
 
 int
